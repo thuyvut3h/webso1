@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Fuggles&family=Poppins&display=swap');
+body{font-family: 'Poppins', sans-serif; }
+h1,h2,h3,h4,h5,h6{font-family: 'Abhaya Libre', serif;}
+*{ outline: none}
+.page-title{ background-image: url("../IMAGES/Blog-title.jpg"); height: 300px;
+	font-family: 'Conv_Homework'; color:#fff; font-size: 70px; padding-top: 50px}
+
+footer{ background: #4B4342; }
+.mega-menu{ width: 700%; left: -250%}
+.dropdown-item{ border-bottom: 1px solid #FF91AF}
+.dropdown-header{ margin: 25px 0 10px 0; color: #8FA83B; font-size: 18px}
+.icon-hover{ position: absolute; left: 0; width: 100%; top: 40%; background: rgba(255,255,255,.7); padding: 20px 0; box-shadow: 0 5px 10px #eee; border: 1px solid #FFD837; opacity: 0; transition:all .5s}
+.icon-hover i{ cursor: pointer}
+.item:hover >.icon-hover{ opacity: 1; top: 35%}
+@media (max-width:992px){
+	.mega-menu{ width: 100%; left:0}
+}
+
+.nen-full{ 
+	background-image: url( "../IMAGES/topLeft.png"), url("../IMAGES/rightBottom.png");
+	background-repeat: no-repeat,no-repeat;
+	background-position: left top, right bottom;
+}	
+.Aside-menu .nav-link{ color: #333; border-bottom: 1px dotted #ccc; background: url("../IMAGES/nav-link-dot.png") no-repeat 5% center; padding-left: 40px; padding-bottom: 15px; padding-top: 15px; font-size: 18px}	
+.Aside-menu .nav-link:hover{  color:#FF91AF}
+a{ color:#6E861D} a:hover{ color: #FF91AF; text-decoration: none}
+.giacu{ text-decoration: line-through; color: #ccc}
+#welcome{ 
+	background-image: url("../IMAGES/top-left2.png"), url("../IMAGES/right-bottom2.png");
+	background-repeat: no-repeat,no-repeat;
+	background-position: left top, right bottom;min-height: 700px
+	}
+.border-10{ border: solid #FFDEA6 10px}
+.thebest{ width: 100%;  position: absolute; left: 0; top: 0; border-radius: 50%; padding-top: 120px; color: #fff; font-size: 36px; text-shadow: 1px 1px 3px #333;
+opacity: 0;transition: all .5s}
+.b-welcome img{ transition: all .5s}
+.b-welcome:hover >img{ filter: hue-rotate(-90deg); transform: scale(.9) }
+.b-welcome:hover >.thebest{ opacity: 1}
+@media (max-width:992px){
+	.thebest{ font-size: 16px; padding-top:80px}
+	}
+@media (max-width:768px){
+	.thebest{ font-size: 30px; padding-top:120px}
+	#welcome{ background:none}
+	}
+/*-------------------------------------- trending product-------------------*/
+.trending-circle{ width: 50%}
+.T-item{ position: absolute; left: 0; width: 100%; 
+	top: 70px; text-align: center}
+
+@media (max-width:992px){
+	.trending-circle{ width: 70%}
+}
+@media (max-width:600px){
+	.trending-circle{ width: 100%}
+	.T-item{ top: 45px}
+}
+.rounded-50{ border-radius: 30px}
+.giacu{ text-decoration: line-through; font-size: 14px}
+/*-------------------------------------- high quality-------------------*/
+
+#high-quality{ background: url("../IMAGES/bg-high quality.jpg") no-repeat center top; min-height: 500px; padding-bottom: 100px}
+
+@media (max-width:600px){
+	#high-quality{ background-size: cover}
+}
+/*-------------------------------------------------------------*/
+#flavour{ 
+	background-image: url( "../IMAGES/left-top0.png"), url( "../IMAGES/right-top.png");
+	background-repeat: no-repeat,no-repeat;
+	background-position: left top, right bottom; min-height: 700px
+}	
+.bg-cream{ background: url("../IMAGES/flavours1.jpg") no-repeat center top; min-height: 700px}
+@media (max-width:900px){
+	#flavour{ 
+		background: none}
+}
+@media (max-width:768px){
+	.bg-cream{ background: none}
+}
+/*-------------------- our price----------*/
+#our-price{ background: url("../IMAGES/bg-our price.jpg") repeat-y center top; min-height: 800px}
+
+#our-contact {background:url("../IMAGES/bg-contact.jpg")repeat-y center top; min-height: 800px}
+.anhnho img{ cursor: pointer}
+
+
+
+

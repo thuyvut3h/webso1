@@ -1,0 +1,314 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templateFW.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Yubee ice cream</title>
+<!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/main-style.css">
+<link href="../IMAGES/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link rel="stylesheet" href="../css/shop.css" type="text/css">	
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+</script>
+</head>
+
+<body>
+<!-- popup-dang nhap-->
+<div class="modal fade" id="dangnhap">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"> ĐĂNG NHẬP</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <small id="emailHelp1" class="form-text text-muted">We'll never share your email with anyone else.</small> </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="row px-3">
+            <div class="text-right col-12">
+              <p> <a href="#recoverPS" data-toggle="modal" class="text-dark">Recover Password</a></p>
+              <p class="col-12 text-secondary text-right"><small>not a member ? </small> <a href="signup.html" class="text-danger">Sign up</a></p>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--popup search-box-->
+<div class="modal fade" id="search-box">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="text-primary pl-4">SEARCH</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+		<form name="search" class="input-group my-4 px-4">
+			  <input type="text" placeholder="search here" class="form-control form-control-lg">
+			<button type="button" class="input-group-append btn btn-primary btn-lg">GO</button>
+		  </form>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- popup shopping cart-->
+<div class="modal fade" id="shopping-box">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				 <h4 class="modal-title">Giỏ hàng</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+ 			</div>
+			  <div class="modal-body">
+          <div class="cart-row d-flex">
+			  <span class="cart-item cart-header cart-column">ITEM</span>
+			  <span class="cart-price cart-header cart-column">PRICE</span> 
+			  <span class="cart-quantity cart-header cart-column">QUANTITY</span> 
+			</div>
+          <div class="cart-items"> </div>
+          <div class="cart-total"> <strong class="cart-total-title">Total</strong><span> $</span> <span class="cart-total-price text-danger">0</span> </div>
+        <!--  <button class="btn btn-primary btn-purchase" type="button" onClick="getURL()">Thanh toán</button>-->
+				  <button type="button" class="btn btn-primary btn-purchase" onClick="MM_goToURL('parent','THANHTOAN.html');return document.MM_returnValue">Thanh toán</button> 
+        </div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				
+			
+		  </div>
+		</div>
+	
+	
+	</div>
+	
+	
+	</div>	
+	
+	
+	
+	
+	
+	
+	
+<nav class="navbar navbar-expand-lg bg-light navbar-light py-4">
+  <div class="container-fluid"> <a href="../index.html" class="navbar-brand"><img src="../IMAGES/logo.png"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><i class="navbar-toggler-icon"></i></button>
+    <div class="navbar-collapse collapse" id="menu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active"><a href="../index.html" class="nav-link"> Home</a></li>
+        <li class="nav-item"><a href="About.html" class="nav-link"> About </a></li>
+        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Shop</a>
+          <div class="dropdown-menu mega-menu">
+            <div class="row pr-4 text-center">
+              <div class="col-12 col-md-6 col-lg-3">
+                <h4 class="dropdown-header">CONES</h4>
+                <a href="shop1.html" class="dropdown-item">Waffle cone</a> <a href="#" class="dropdown-item">Scoop </a> <a href="shop2.html" class="dropdown-item">Bowl</a> <a href="shop3.html" class="dropdown-item">Sprinkle</a> <a href="#" class="dropdown-item">Sugar</a> </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <h4 class="dropdown-header">CANDY</h4>
+                <a href="shop3.html" class="dropdown-item">Tall cup ice cream</a> <a href="#" class="dropdown-item">Chocolate</a> <a href="#" class="dropdown-item">Bowl</a> <a href="#" class="dropdown-item">Sprinkle</a> <a href="#" class="dropdown-item">Sugar</a> </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <h4 class="dropdown-header">TALL CUP</h4>
+                <a href="shop2.html" class="dropdown-item">Scoop</a> <a href="#" class="dropdown-item">Chocolate</a> <a href="#" class="dropdown-item">Bowl</a> <a href="#" class="dropdown-item">Sprinkle</a> <a href="#" class="dropdown-item">Sugar</a> </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <h4 class="dropdown-header">TODAY ONLY !</h4>
+                <img src="../IMAGES/mega-img.png%20" class="img-fluid "> </div>
+            </div>
+            <!--end row 1 dropdown lon-->
+            <div class="row px-4 py-3">
+              <div class="col-12 col-md-6 mb-3 "> <img src="../IMAGES/mega-2.jpg"  class="img-fluid "> </div>
+              <div class="col-12 col-md-6 "> <img src="../IMAGES/mega-3.jpg"  class="img-fluid "> </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Services</a>
+          <div class="dropdown-menu"> <a href="Our-staff.html" class="dropdown-item">Our Staff</a> <a href="Recipie.html" class="dropdown-item">Recipies</a> <a href="price.html" class="dropdown-item">Prices</a> </div>
+        </li>
+        <li class="nav-item"><a href="BLOG.html" class="nav-link"> Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link"> Contact us</a></li>
+      </ul>
+      <div class="navbar-text d-flex"> <a href="#search-box" data-toggle="modal" class="mx-2"> <i class="fa fa-search fa-lg"></i></a> <a href="#dangnhap" data-toggle="modal" class="mx-2"><i class="fa fa-user fa-lg"></i></a> 
+		  <a href="#shopping-box" data-toggle="modal" class="mx-2"><i class="fa fa-shopping-cart fa-lg"></i>  <span class="badge badge-warning" id="sl">0</span> </a> </div>
+      <div class="navbar-text"> </div>
+    </div>
+  </div>
+</nav>
+<!-- InstanceBeginRepeat name="RepeatRegion1" --><!-- InstanceBeginRepeatEntry -->
+<div class="page-title"> <!-- InstanceBeginEditable name="td" -->
+  <div class="container text-center"> Shop Detail
+    <h3>Trang chủ ..../ ... Sản phẩm... / Xem chi tiết sản phẩm</h3>
+  </div>
+  <!-- InstanceEndEditable --></div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --> <!-- InstanceBeginEditable name="contentFW" -->
+<main>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 p-0">
+        <div class="px-5 border-0 "> <img src="../IMAGES/shop/kem (1).jpg" class="img-fluid w-100 shop-item-image" id="anhto">
+          <div class="d-flex anhnho">
+            <div class="col-3 p-0"><img src="../IMAGES/shop/kem (1).jpg" class="img-fluid" onClick="anhsp(1)"></div>
+            <div class="col-3 p-0"><img src="../IMAGES/shop/kem (2).jpg" class="img-fluid" onClick="anhsp(2)"></div>
+            <div class="col-3 p-0"><img src="../IMAGES/shop/kem (3).jpg" class="img-fluid" onClick="anhsp(3)"></div>
+            <div class="col-3 p-0"><img src="../IMAGES/shop/kem (4).jpg" class="img-fluid" onClick="anhsp(4)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 item">
+		<h5>Tall cup ice cream</h5>
+		<h1 class="shop-item-title">Banana-Caramel MilkShake</h1>
+		 <p> <i class="fa fa-star text-warning"></i> <i class="fa fa-star text-warning"></i> <i class="fa fa-star-o text-warning"></i> <i class="fa fa-star-half-o text-warning"></i>  | (2) preview  | <span class="text-secondary">Write Comment</span></p>
+		  <p><span class="shop-item-price">$150.00 </span><span class="giacu ml-5"> $450.00</span></p>
+		   <img src="../IMAGES/shop/kem (1).jpg" class="w-25 shop-item-image d-none">
+		  <hr class="mt-5">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repudiandae pariatur quae vitae laborum vero exercitationem, enim laboriosam. Id adipisci blanditiis maiores dolor et nulla tenetur, rerum beatae natus odio.</p>
+		  <p class="form-inline">Quantity: &nbsp; <input type="number" class="form-control ml-3" placeholder="1"></p>
+		  <p><button type="button" class="btn btn-primary mt-4 shop-item-button">Add To Cart</button></p>
+		  
+		</div>
+    </div>
+	  <div class="py-5">
+	  <ul class="d-flex nav justify-content-center nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#des">Description</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#comment">Comment (2)</a>
+    </li>
+    
+  </ul>
+	   <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="des" class="container tab-pane active"><br>
+      <h3 class="text-primary">Banana-Caramel MilkShake</h3>
+		<h5 class="text-danger">Execellent ice cream</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nostrum eius suscipit voluptatem incidunt, aperiam accusamus neque temporibus quisquam porro officia optio voluptate fugit fuga earum assumenda. Dignissimos officiis, facere.</p>
+		<h5 class="text-danger">Awesome Fauvor</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nostrum eius suscipit voluptatem incidunt, aperiam accusamus neque temporibus quisquam porro officia optio voluptate fugit fuga earum assumenda. Dignissimos officiis, facere.</p>
+    </div>
+    <div id="comment" class="container tab-pane fade"><br>
+      <h4 class="text-primary">Mr Tony </h4>
+			 <p> <i class="fa fa-star text-warning"></i> <i class="fa fa-star text-warning"></i> <i class="fa fa-star-o text-warning"></i> <i class="fa fa-star-half-o text-warning"></i>  | (2) preview  | <span class="text-secondary">Write Comment</span></p>
+      <p><em>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum adipisci nemo unde sapiente! Deleniti aspernatur quam dolores hic dicta tempore quisquam, harum. Dicta voluptatem, officiis cumque dolorum! Blanditiis, provident, quasi!</p>
+		<div class="pl-5 mt-4">
+		 <h4 class="text-danger"> Miss Tennuien</h4>
+			<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsa natus asperiores ut vitae, ea cum nesciunt. Eum in tenetur, quas, nostrum natus unde hic modi quia animi soluta omnis.</em></p>
+		
+		</div>
+    </div>
+  
+  </div>
+  </div>
+	 <div class="py-4">
+		 <h2 class="text-center border-bottom text-primary"> Related Products</h2>
+	  </div>
+		 <div class="row">
+		 <div class="col-md-3 mb-3 ">
+            <div class="text-center my-3 item py-3"><a href="shop-detail.html"> <img src="../IMAGES/shop/kem (1).jpg" class="w-100 shop-item-image"></a>
+              <h5 class="shop-item-title"><a href="shop-detail.html">Banana-Caramel MilkShake</a></h5>
+              <p><span class="shop-item-price">$150.00 </span><span class="giacu ml-5"> $450.00</span></p>
+				<p class="d-flex justify-content-center icon-hover">
+				  <a href="#" class="text-primary mx-3"><i class="fa fa-heart fa-2x "></i></a>
+				  <i class="fa fa-shopping-cart fa-2x shop-item-button text-primary"></i>
+				  </p>
+            </div>
+          </div>	
+			 <div class="col-md-3 mb-3 ">
+            <div class="text-center my-3 item py-3"> <img src="../IMAGES/shop/kem (2).jpg" class="w-100 shop-item-image">
+              <h5 class="shop-item-title">Green Tea Ala Ice cream</h5>
+              <p><span class="shop-item-price">$150.00 </span><span class="giacu ml-5"> $450.00</span></p>
+				<p class="d-flex justify-content-center icon-hover">
+				  <a href="#" class="text-primary mx-3"><i class="fa fa-heart fa-2x "></i></a>
+				  <i class="fa fa-shopping-cart fa-2x shop-item-button text-primary"></i>
+				  </p>
+            </div>
+          </div>
+			 <div class="col-md-3 mb-3 ">
+            <div class="text-center my-3 item py-3"> <img src="../IMAGES/shop/kem (3).jpg" class="w-100 shop-item-image">
+              <h5 class="shop-item-title">Chocolat Italian Ice cream</h5>
+              <p><span class="shop-item-price">$150.00 </span><span class="giacu ml-5"> $450.00</span></p>
+				<p class="d-flex justify-content-center icon-hover">
+				  <a href="#" class="text-primary mx-3"><i class="fa fa-heart fa-2x "></i></a>
+				  <i class="fa fa-shopping-cart fa-2x shop-item-button text-primary"></i>
+				  </p>
+            </div>
+          </div>
+			 <div class="col-md-3 mb-3 ">
+            <div class="text-center my-3 item py-3"> <img src="../IMAGES/shop/kem (4).jpg" class="w-100 shop-item-image">
+              <h5 class="shop-item-title">Italian caffe Ice cream</h5>
+              <p><span class="shop-item-price">$150.00 </span><span class="giacu ml-5"> $450.00</span></p>
+				<p class="d-flex justify-content-center icon-hover">
+				  <a href="#" class="text-primary mx-3"><i class="fa fa-heart fa-2x "></i></a>
+				  <i class="fa fa-shopping-cart fa-2x shop-item-button text-primary"></i>
+				  </p>
+            </div>
+          </div> 
+	      </div> 
+  </div>
+</main>
+<!-- InstanceEndEditable -->
+<footer class="text-white pt-5">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-4 text-center text-lg-left"> <img src="../IMAGES/logo-footer.png">
+        <p class="my-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eum exercitationem molestiae.</p>
+      </div>
+      <!-- het cột 1 footer-->
+      <div class="col-md-6 col-lg-3 text-center text-md-right text-lg-left my-4 my-md-0 pr-0 pr-md-5">
+        <h5>Open Hour</h5>
+        <p><b>Monday:</b> Closed</p>
+        <p><b>Tuesday to Friday:</b><br>
+          7:00 AM - 9:00 PM</p>
+        <p><b>Saturday to Sunday:</b> <br>
+          11:00 AM - 10:00 PM </p>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center text-md-left pl-0 pl-md-5">
+        <h5>Find Us</h5>
+        <p><b>Address: </b> 75/68 Hoang Sa F9, Q3, Tp.HCM</p>
+        <p><b>Email:</b> yupee@gmail.com</p>
+        <p><b>Phone:</b> +44 987-654-3210</p>
+        <p><b>Fax: </b> 1-800-1234-567</p>
+      </div>
+    </div>
+    <!--hêt row 1 của footer--> 
+  </div>
+  <div class="row justify-content-center border-top py-4">
+    <p class="text-center">Copyright © 2020 Yupee Store. </p>
+  </div>
+</footer>
+<script src="../js/jquery-3.3.1.min.js"></script> 
+<script src="../js/popper.min.js"></script> 
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/thuvienJS.js"></script> 
+	<script src="../js/shop.js"></script>
+<script>
+	ngaythangnam(); dongho()
+	
+	</script>
+</body>
+<!-- InstanceEnd --></html>
